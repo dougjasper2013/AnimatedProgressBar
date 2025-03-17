@@ -11,6 +11,8 @@
 		802428862D88499C00A38A58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802428852D88499C00A38A58 /* ContentView.swift */; };
 		802428882D88499D00A38A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802428872D88499D00A38A58 /* Assets.xcassets */; };
 		8024288B2D88499D00A38A58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8024288A2D88499D00A38A58 /* Preview Assets.xcassets */; };
+		802428922D884C8B00A38A58 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802428912D884C8B00A38A58 /* ProgressBarView.swift */; };
+		802428942D8858CF00A38A58 /* GreatVibes-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 802428932D8858CF00A38A58 /* GreatVibes-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		802428852D88499C00A38A58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		802428872D88499D00A38A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8024288A2D88499D00A38A58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		802428912D884C8B00A38A58 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		802428932D8858CF00A38A58 /* GreatVibes-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GreatVibes-Regular.ttf"; sourceTree = "<group>"; };
+		802428952D88597300A38A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,13 @@
 		802428822D88499C00A38A58 /* AnimatedProgressBar */ = {
 			isa = PBXGroup;
 			children = (
+				802428952D88597300A38A58 /* Info.plist */,
 				802428832D88499C00A38A58 /* AnimatedProgressBarApp.swift */,
 				802428852D88499C00A38A58 /* ContentView.swift */,
 				802428872D88499D00A38A58 /* Assets.xcassets */,
 				802428892D88499D00A38A58 /* Preview Content */,
+				802428912D884C8B00A38A58 /* ProgressBarView.swift */,
+				802428932D8858CF00A38A58 /* GreatVibes-Regular.ttf */,
 			);
 			path = AnimatedProgressBar;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			files = (
 				8024288B2D88499D00A38A58 /* Preview Assets.xcassets in Resources */,
 				802428882D88499D00A38A58 /* Assets.xcassets in Resources */,
+				802428942D8858CF00A38A58 /* GreatVibes-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				802428862D88499C00A38A58 /* ContentView.swift in Sources */,
+				802428922D884C8B00A38A58 /* ProgressBarView.swift in Sources */,
 				802428842D88499C00A38A58 /* AnimatedProgressBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +284,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AnimatedProgressBar/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimatedProgressBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +313,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AnimatedProgressBar/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimatedProgressBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
