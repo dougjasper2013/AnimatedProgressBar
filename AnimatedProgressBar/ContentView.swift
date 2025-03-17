@@ -12,13 +12,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("Animated Progress Bar")
+            Text("Animated Circular Progress Bar")
                 .font(.custom("GreatVibes-Regular", size: 24))
                 .italic()
                 .bold()
             
             ProgressBarView(progress: progress)
-                .frame(width: 300, height: 20)
                 
             Button(action: {
                 progress = progress < 1.0 ? 1.0 : 0.0 // Toggle animation

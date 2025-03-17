@@ -12,18 +12,21 @@ struct ProgressBarView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            ZStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 20)
-                    .foregroundColor(Color.gray.opacity(0.3))
+            ZStack {
+                // Background Circle (gray)
+                Circle()
+                    .stroke(Color.gray.opacity(0.3), lineWidth: 10)
                 
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: geometry.size.width * progress, height: 20)
-                    .foregroundColor(.blue)
+                // Foreground Circle (progress)
+                Circle()
+                    .trim(from: 0, to: progress)
+                    .stroke(Color.blue, lineWidth: 10)
+                    .rotationEffect(.degrees(-90)) // To start the progress from the top
                     .animation(.easeInOut(duration: 1.5), value: progress)
             }
+            .frame(width: geometry.size.width, height: geometry.size.width) // Make it a perfect circle
         }
-        .frame(height: 20)
+        .frame(width: 100, height: 100) // Set the size for the circular progress bar
     }
 }
 
